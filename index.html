@@ -10,8 +10,6 @@ Date: September 15, 2026
 <head>
 	<title>Arion Thomas Portfolio</title>
 	<meta charset="utf-8">
-
-	<!-- Mobile viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Google Fonts -->
@@ -24,28 +22,29 @@ Date: September 15, 2026
 
 <body>
 
-	<div id="container">
+	<!-- HTML5 semantic element: header -->
+	<header>
+		<h1>Arion Thomas</h1>
+		<h2>My Personal Portfolio</h2>
+		<p>My goal is to continue learning, growing, and building a successful future through education, creativity, and hard work.</p>
+	</header>
 
-		<!-- Use header area for website name or logo -->
-		<header>
-			<h1>Arion Thomas</h1>
-			<h2>My Personal Portfolio</h2>
-			<p>My goal is to continue learning, growing, and building a successful future through education, creativity, and hard work.</p>
-		</header>
+	<!-- HTML5 semantic element: nav -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="project.html">Projects</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
 
-		<!-- Use nav area to add hyperlinks to other pages -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="project.html">Projects</a></li>
-				<li><a href="education.html">Education</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+	<!-- HTML5 semantic element: main -->
+	<main id="container">
 
-		<!-- Use main area to add content to page -->
-		<main>
+		<!-- HTML5 semantic element: section -->
+		<section class="home-content">
 
 			<h2>Welcome to My Portfolio!</h2>
 
@@ -69,15 +68,15 @@ Date: September 15, 2026
 
 			<p>Thank you for visiting my personal portfolio!</p>
 
-		</main>
+		</section>
 
-		<!-- Use footer content -->
-		<footer>
-			<p>&copy; Copyright 2026. All Rights Reserved.</p>
-			<p>Arion Thomas Portfolio</p>
-		</footer>
+	</main>
 
-	</div>
+	<!-- HTML5 semantic element: footer -->
+	<footer>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+		<p>Arion Thomas Portfolio</p>
+	</footer>
 
 </body>
 
