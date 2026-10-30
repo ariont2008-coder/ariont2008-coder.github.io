@@ -1,0 +1,534 @@
+ 
+/*
+ Author: Arion Thomas
+ Date: September 14, 2026
+ File Name: styles.css
+*/
+
+body, header, nav, footer, main, div, h1, img, ul, figure, figcaption, section, article, aside {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+/* Box sizing */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #000;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* Mobile Viewport */
+
+/* Header */
+header {
+   top: 0;
+   background-color: #000;
+   height: 190px;
+}
+
+header img {
+   margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+   padding: 1%;
+   margin-bottom: 1%;
+}
+
+nav ul {
+   list-style-type: none;
+   text-align: center;
+}
+
+nav li {
+   font-size: 1.5em;
+   font-family: 'Francois One', sans-serif;
+   border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+   border-top: none;
+}
+
+nav li a {
+   display: block;
+   color: #fff;
+   padding: .5em 1em;
+   text-decoration: none;
+}
+
+#contact {
+   margin: 0 auto;
+   width: 70%;
+   text-align: center;
+}
+
+/* Mobile and Tablet Display */
+.mobile {
+   display: block;
+}
+
+.tablet-desktop {
+   display: none;
+}
+
+/* Map */
+.map {
+   border: 2px solid #000;
+   width: 95%;
+   height: 50%;
+}
+
+/* Main Content */
+main {
+   background-color: #fff;
+   padding: 2%;
+   font-size: 1.15em;
+   font-family: 'Roboto Slab', serif;
+}
+
+.mobile h3 {
+   text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+   padding: 2%;
+}
+
+article h3 {
+   text-align: center;
+}
+
+article img {
+   margin: 0 auto;
+}
+
+article ul {
+   margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+   background-color: rgba(204,204,204,0.3);
+}
+
+/* Telephone Link */
+.tel-link {
+   background-color: #404040;
+   padding: 2%;
+   margin: 0 auto;
+   width: 80%;
+   text-align: center;
+   border-radius: 5px;
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5em;
+}
+
+.tel-link a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.hours {
+   margin-left: 10%;
+}
+
+.action {
+   font-size: 1.35em;
+   color: #660;
+   font-weight: bold;
+   text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame {
+   position: relative;
+   max-width: 450px;
+   margin: 2% auto;
+}
+
+.pic-text {
+   position: absolute;
+   bottom: 0;
+   background: rgba(0,0,0,0.5);
+   color: #fff;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+#weights, #cardio, #training {
+   margin: 0 2%;
+}
+
+.round {
+   border-radius: 8px;
+}
+
+/* TABLE AND FORM STYLES */
+
+/* Table */
+table {
+   border: 1px solid #000;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 80%;
+}
+
+caption {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+
+th, td {
+   border: 1px solid #000;
+   padding: 2%;
+}
+
+th {
+   background-color: #000;
+   color: #fff;
+   font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+   background-color: #ccc;
+}
+
+/* Mobile Form */
+#form {
+   margin: 2% auto;
+   width: 95%;
+   background-color: #f2f2f2;
+   padding: 4%;
+   border-radius: 10px;
+}
+
+#form h2 {
+   text-align: center;
+   margin-bottom: 3%;
+}
+
+form {
+   width: 100%;
+   margin: 0 auto;
+}
+
+fieldset {
+   border: 1px solid #999;
+   padding: 3%;
+   margin-bottom: 4%;
+   border-radius: 8px;
+}
+
+fieldset legend {
+   font-weight: bold;
+   font-size: 1.25em;
+}
+
+fieldset, input, select, textarea {
+   margin-bottom: 2%;
+}
+
+label {
+   display: block;
+   padding-top: 3%;
+   font-weight: bold;
+}
+
+input, select, textarea {
+   width: 100%;
+   padding: 12px;
+   margin-top: 1%;
+   margin-bottom: 3%;
+   border: 1px solid #999;
+   border-radius: 5px;
+   font-size: 1em;
+}
+
+textarea {
+   resize: vertical;
+   min-height: 100px;
+}
+
+form #submit {
+   width: 100%;
+   margin: 2% auto;
+   border: none;
+   display: block;
+   padding: 3%;
+   background-color: #000;
+   color: #fff;
+   font-size: 1.1em;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+/* TABLET VIEWPORT */
+@media screen and (min-width: 630px), print {
+
+   .tablet-desktop {
+      display: block;
+   }
+
+   .mobile {
+      display: none;
+   }
+
+   header {
+      padding-bottom: 2%;
+   }
+
+   /* Navigation */
+   nav li {
+      border-top: none;
+      display: inline-block;
+      border-right: 1px solid #fff;
+   }
+
+   nav li:last-child {
+      border-right: none;
+   }
+
+   nav li a {
+      padding: 0.1em 0.75em;
+   }
+
+   /* Main Content */
+   main ul {
+      margin: 0 0 4% 10%;
+   }
+
+   .grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+   }
+
+   .pic-text {
+      font-size: 1em;
+      padding: 10px;
+   }
+
+   aside {
+      font-size: 1.25em;
+      font-style: italic;
+      font-weight: bold;
+      padding: 2%;
+      background-color: rgba(204,204,204,0.5);
+      box-shadow: 5px 5px 8px #000;
+      text-shadow: 5px 5px 5px #b3b3b3;
+      border-radius: 0 15px;
+      text-align: center;
+   }
+
+   .grid-item4 {
+      grid-column: 1 / span 3;
+   }
+
+   #exercises {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      background: linear-gradient(to right, #ccc, #fff);
+      background-color: #f2f2f2;
+      padding: 1% 2%;
+   }
+
+   #exercises dt {
+      font-weight: bold;
+   }
+
+   #exercises dd {
+      padding: 0.5% 1% 2% 0;
+   }
+
+   .tel-num {
+      font-size: 1.25em;
+   }
+
+   .map {
+      width: 600px;
+      height: 450px;
+      max-width: 100%;
+   }
+
+   /* Tablet Form */
+   #form {
+      width: 85%;
+      padding: 3%;
+      margin: 2% auto;
+   }
+
+   form {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+   }
+
+   .btn {
+      grid-column: 1 / span 2;
+   }
+
+   form #submit {
+      width: 50%;
+   }
+
+   /* Tablet Table */
+   table {
+      width: 80%;
+   }
+}
+
+/* DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print {
+
+   header {
+      width: 25%;
+      float: left;
+      padding-bottom: 0;
+   }
+
+   /* Navigation */
+   nav {
+      float: right;
+      width: 70%;
+      margin: 4em 1em 0 0;
+   }
+
+   nav ul {
+      text-align: right;
+   }
+
+   nav li {
+      border: none;
+   }
+
+   nav li a {
+      padding: 0.5em 1em;
+   }
+
+   nav li a:hover {
+      color: #000;
+      background-color: #fff;
+   }
+
+   /* Main Content */
+   main {
+      clear: left;
+   }
+
+   main h1 {
+      font-size: 1.8em;
+   }
+
+   article h3 {
+      font-size: 1.75em;
+   }
+
+   .pic-text {
+      font-size: 1.5em;
+      padding: 20px;
+   }
+
+   .frame {
+      opacity: 0.9;
+   }
+
+   .frame:hover {
+      opacity: 1;
+      box-shadow: 8px 8px 10px #808080;
+   }
+
+   #weights, #cardio, #training {
+      width: 29%;
+      float: left;
+      margin: 0 2%;
+   }
+
+   #exercises {
+      clear: left;
+   }
+
+   /* Desktop Form */
+   #form {
+      width: 70%;
+      padding: 2%;
+   }
+
+   form {
+      width: 90%;
+   }
+
+   .form-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+   }
+
+   .btn {
+      grid-column: 1 / span 3;
+   }
+
+   form #submit {
+      width: 40%;
+   }
+}
+
+/* LARGE DESKTOP VIEWPORT */
+@media screen and (min-width: 1921px) {
+
+   #container {
+      width: 1920px;
+      margin: 0 auto;
+   }
+}
+
+/* PRINT VIEWPORT */
+@media print {
+
+   body {
+      background-color: #fff;
+      color: #000;
+   }
+
+   .external-link {
+      color: #660;
+      font-weight: bold;
+      text-decoration: none;
+   }
+
+   #contact .contact-email-link {
+      color: #666600;
+      text-decoration: none;
+   }
+}
+
+/* Footer */
+footer p {
+   font-size: .75em;
+   text-align: center;
+   color: #fff;
+   padding: 0 1em;
+}
+
+footer p a {
+   color: #fff;
+   text-decoration: none;
+}
