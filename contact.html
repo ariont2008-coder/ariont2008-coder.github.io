@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 This website was created by Arion Thomas
@@ -8,7 +9,7 @@ Date: September 15, 2026
 <html lang="en">
 
 <head>
-	<title>Arion Thomas Portfolio</title>
+	<title>Arion Thomas Portfolio - Contact</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,7 +43,7 @@ Date: September 15, 2026
 	<!-- HTML5 semantic element: main -->
 	<main id="container">
 
-		<!-- HTML5 semantic element: section -->
+		<!-- Contact Information Section -->
 		<section id="contact">
 
 			<h2>If You Want To Reach Me...</h2>
@@ -71,6 +72,37 @@ Date: September 15, 2026
 
 		</section>
 
+		<!-- Contact Form ADDED -->
+		<section id="contact-form-section">
+
+			<h2>Contact Me</h2>
+
+			<p>Have a question or want to connect? Fill out the form below!</p>
+
+			<form id="contact-form">
+
+				<label for="name">Full Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+				<label for="reason">Reason for Contact:</label>
+				<select id="reason" name="reason">
+					<option value="question">General Question</option>
+					<option value="work">Work Opportunity</option>
+					<option value="project">Website Project</option>
+				</select>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+				<input type="submit" value="Send Message">
+
+			</form>
+
+		</section>
+
 	</main>
 
 	<!-- HTML5 semantic element: footer -->
@@ -82,3 +114,4 @@ Date: September 15, 2026
 </body>
 
 </html>
+
